@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura responsividad en dispositivos -->
+  <link rel="stylesheet" href="css/esitlologin.css"> <!-- CSS personalizado para el formulario de login -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
+  <title>Iniciar Sesión</title>
+</head>
+<body>
+  <!-- Contenedor principal del formulario -->
+  <div class="cuadro-formulario">
+    <!-- Uso de Bootstrap para centrar y estructurar el formulario -->
+    <div class="container">
+      <!-- Campo de correo -->
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label form_etiqueta">Correo</label> <!-- Etiqueta personalizada con clase form_etiqueta -->
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> <!-- Campo de entrada de email -->
+        <div id="emailHelp" class="form-text"></div> <!-- Espacio para texto de ayuda (vacío por ahora) -->
+      </div>
+      <!-- Campo de contraseña -->
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label form_etiqueta">Contraseña</label> <!-- Etiqueta personalizada -->
+        <input type="password" class="form-control" id="exampleInputPassword1"> <!-- Campo de entrada de contraseña -->
+      </div>
+      <!-- Botón de entrada -->
+      <div class="button d-flex justify-content-center">
+        <a href="index.html" class="btn btn-primary">Entrar</a> <!-- Botón que redirige a index.html -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

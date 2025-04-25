@@ -1,0 +1,73 @@
+body {
+    background-color: #F5F3E7; /* Beige claro */
+    background-image: url('/imagenes/fon2.png');
+    background-size: 1920px auto;
+    margin: 10px;
+}
+
+.nav-link {
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link:hover {
+    color: #5b7e46;
+}
+
+.form_etiqueta {
+    background-color: #A2FF42;
+    border-style: solid;
+    border-color: #5BFF00;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+#cnt_formulario {
+    background-color: #5BFF00;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 0.5px 1px;
+}
+
+.carousel-item img {
+    filter: brightness(0.7);
+    max-height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.productos {
+    max-width: 960px;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.card {
+    width: 18rem;
+    margin: 5px; /* Reducir margen para menos espaciado */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.card-text {
+    color: #60a739;
+    font-weight: bold;
+}
+
+.card-buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+}

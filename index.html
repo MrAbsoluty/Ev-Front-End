@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura responsividad -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- CSS personalizado -->
+    <title>Lácteos del Valle</title>
+</head>
+<body>
+    <div>
+      <!-- Navbar con logo y enlaces -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/logolact.png" alt="Lácteos del Valle" width="100" height="100">
+          </a>
+          <div class="navbar-nav d-flex flex-row">
+            <a class="nav-link mx-2" href="#">Sobre nosotros</a>
+            <a class="nav-link mx-2" href="#">Ayuda</a>
+            <a class="nav-link mx-2" href="#contactanos">Contáctanos</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel con imágenes y captions -->
+      <div class="container mt-4">
+        <div id="carouselExampleCaptions" class="carousel slide rounded shadow overflow-hidden">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/quesos-artesanaless (1).png" class="img-fluid d-block w-100" alt="Quesos artesanales">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Quesos Artesanales</h5>
+                <p>Elaborados con la mejor leche de la Araucanía</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/araucania.png" class="img-fluid d-block w-100" alt="Araucanía">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>La Araucanía</h5>
+                <p>Tradición y naturaleza en cada producto</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/granja_vacas .png" class="img-fluid d-block w-100" alt="Granja vacas">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nuestra Granja</h5>
+                <p>Cuidado y calidad en cada etapa de producción</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Contenedor de productos con Cards -->
+      <div class="productos d-flex flex-wrap justify-content-center gap-4 mt-5">
+        
+        <!-- Cada Card representa un producto con imagen, título, precio y botones -->
+
+        <!-- Leche Entera -->
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/botella.png" class="card-img-top" alt="Leche Entera">
+          <div class="card-body">
+            <h5 class="card-title">Leche Entera</h5>
+            <p class="card-text">$1,319</p>
+            <div class="card-buttons d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Añadir a la cesta</a>
+            </div>
+          </div>
+        </div>
+        <!-- Queso -->
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/queso.png" class="card-img-top" alt="Queso Gouda">
+          <div class="card-body">
+            <h5 class="card-title">1/4 Queso Artesanal Gouda</h5>
+            <p class="card-text">$3,490</p>
+            <div class="card-buttons d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Añadir a la cesta</a>
+            </div>
+          </div>
+        </div>
+        <!-- Yogurt -->
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/yogurt.png" class="card-img-top" alt="Yogurt Artesanal">
+          <div class="card-body">
+            <h5 class="card-title">Yogurt Artesanal 200g</h5>
+            <p class="card-text">$1,270</p>
+            <div class="card-buttons d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Añadir a la cesta</a>
+            </div>
+          </div>
+        </div>
+        <!-- Quesillo -->
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/quesillo.png" class="card-img-top" alt="Quesillo">
+          <div class="card-body">
+            <h5 class="card-title">Quesillo</h5>
+            <p class="card-text">$2,650</p>
+            <div class="card-buttons d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Añadir a la cesta</a>
+            </div>
+          </div>
+        </div>
+        <!-- Manjar -->
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/manjars.png" class="card-img-top" alt="Manjar">
+          <div class="card-body">
+            <h5 class="card-title">Manjar</h5>
+            <p class="card-text">$1,890</p>
+            <div class="card-buttons d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Añadir a la cesta</a>
+            </div>
+          </div>
+        </div>
+        <!-- Crema de leche -->
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/crema.png" class="card-img-top" alt="Crema de Leche">
+          <div class="card-body">
+            <h5 class="card-title">Crema de Leche</h5>
+            <p class="card-text">$1,370</p>
+            <div class="card-buttons d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary">Añadir a la cesta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Formulario -->
+      <section id="contactanos" class="py-5">
+        <div class="container" style="max-width: 500px;">
+          <h2 class="text-center mb-4">Contáctanos</h2>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
